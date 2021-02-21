@@ -1,0 +1,350 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.giris {
+    position: absolute;
+    width: 131px;
+    height: 37px;
+    left: 591px;
+    top: 325px;
+    box-sizing: border-box;
+    border: none;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 9px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    box-sizing: border-box;
+    color: #403E3F;
+    border: 1px solid #E5E5E5;
+    cursor: pointer;
+}
+
+.uyeol {
+    position: absolute;
+    width: 142px;
+    height: 37px;
+    left: 703px;
+    top: 325px;
+    box-sizing: border-box;
+    border: none;
+    background: #E5E5E5;
+    border-radius: 9px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #403E3F;
+    cursor: pointer;
+}
+
+.eposta {
+    position: absolute;
+    width: 258px;
+    height: 43px;
+    left: 591px;
+    top: 382px;
+    box-sizing: border-box;
+    border: none;
+    background: #E5E5E5;
+    border-radius: 9px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #7C7C7C;
+}
+
+.sifre {
+    position: absolute;
+    width: 258px;
+    height: 43px;
+    left: 589px;
+    top: 440px;
+    box-sizing: border-box;
+    border: none;
+    background: #E5E5E5;
+    border-radius: 9px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #7C7C7C;
+}
+
+.girisbuton {
+    position: absolute;
+    width: 258px;
+    height: 45px;
+    left: 589px;
+    top: 510px;
+    box-sizing: border-box;
+    border: none;
+    background: #FF6002;
+    border-radius: 9px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.link {
+    position: absolute;
+    width: 131px;
+    height: 11px;
+    left: 591px;
+    top: 568px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.055em;
+    color: #FF6002;
+}
+
+.imggiris {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 815px;
+    top: 452px;
+    background: url(view.png);
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    cursor: pointer;
+}
+input[type=text] {
+    padding-left: 5px;
+}
+input[type=password] {
+    padding-left: 5px;
+}
+/* KAYIT FORMU */
+.giris1 {
+    position: absolute;
+    width: 146px;
+    height: 37px;
+    left: 592px;
+    top: 281px;
+    background: #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 9px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #403E3F;
+    border: none;
+}
+
+.uyeol1 {
+    position: absolute;
+    width: 132px;
+    height: 37px;
+    left: 714px;
+    top: 281px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #403E3F;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 9px;
+}
+
+#epostayazi {
+    position: absolute;
+    width: 169px;
+    height: 15px;
+    left: 592px;
+    top: 359px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #6E6E6E;
+}
+
+hr {
+    position: absolute;
+    width: 108px;
+    height: 0px;
+    left: 738px;
+    top: 369px;
+
+    border: 1px solid #E5E5E5;
+}
+
+.ad {
+    position: absolute;
+    width: 122px;
+    height: 41px;
+    left: 592px;
+    top: 394px;
+    border: none;
+    background: #E5E5E5;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #7C7C7C;
+}
+
+.soyad {
+    position: absolute;
+    width: 122px;
+    height: 41px;
+    left: 724px;
+    top: 394px;
+    border: none;
+    background: #E5E5E5;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #7C7C7C;
+}
+
+.eposta1 {
+    position: absolute;
+    width: 254px;
+    height: 41px;
+    left: 592px;
+    top: 449px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #7C7C7C;
+    border: none;
+}
+
+.sifre1 {
+    position: absolute;
+    width: 254px;
+    height: 41px;
+    left: 592px;
+    top: 504px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #7C7C7C;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+}
+
+.sifreonay {
+    position: absolute;
+    width: 254px;
+    height: 41px;
+    left: 592px;
+    top: 559px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    border: none;
+    color: #7C7C7C;
+}
+
+.img1 {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 815px;
+    top: 518px;
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    cursor: pointer;
+}
+
+.img2 {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 815px;
+    top: 573px;
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    cursor: pointer;
+}
+
+.radio {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 592px;
+    top: 614px;
+    border: none;
+    background: #FFFFFF;
+    border: 1px solid #6E6E6E;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.onay {
+    position: absolute;
+    width: 223px;
+    height: 81px;
+    left: 623px;
+    top: 600px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 134.69%;
+    border: none;
+    color: #6E6E6E;
+}
+
+
+.sonuye {
+    position: absolute;
+    width: 254px;
+    height: 41px;
+    left: 592px;
+    top: 684px;
+    background: #CCCCCC;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    border: none;
+    color: #7C7C7C;
+    cursor: pointer;
+}
+.sonuye:disabled
+{
+    cursor: not-allowed;
+}
+
+/* GİRİŞ-KAYIT BAŞARILI */
+h1 {
+    color: #FF6002;
+    text-align: center;
+}

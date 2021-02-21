@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Sayfası</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    function goster() {
+        var x = document.getElementById("sifre");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+
+<body>
+    <div class="form">
+        <form action="js_form_kayit_kontrol.php" onsubmit="return isValid(this)" method="post">
+            <a href="giris-sayfasi.html"><input class="giris" type="button" value="Giriş Yap"></a>
+            <a href="kayit-ol.html"><input class="uyeol" type="button" value="Üye Ol"></a>
+            <input class="eposta" type="text" name="eposta" id="eposta" placeholder="E-posta adresi" name="eposta"
+                required pattern="(?!test@test\.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}\.[a-z]{2,}(?:\.[a-z]{2,})?"
+                title="Geçerli bir email giriniz">
+            <input class="sifre" type="password" name="sifre" id="sifre" placeholder="Şifre" name="sifre" required
+                pattern="^(?=.*\d)[0-9a-zA-Z]{6,}$"
+                title="Parolanız en az 6 karakter olmalı ve en az 1 rakam içermeli.">
+            <img class="imggiris" onclick="goster()" src="img/view.png" alt="">
+            <input class="girisbuton" type="submit" value="Giriş Yap">
+            <a class="link" href="test">Şifremi unuttum</a>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Olma Formu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    function isValid(frm) {
+        var ad = frm.ad.value;
+        var soyad = frm.soyad.value;
+        var eposta1 = frm.eposta1.value;
+        var sifre1 = frm.sifre1.value;
+        var sifreonay = frm.sifreonay.value;
+        var rizametni = frm.rizametni.value;
+
+        if (!(sifre1 == sifreonay)) {
+            alert("Şifreler eşleşmiyor");
+            return false;
+        }
+        return true;
+    }
+
+    function sifregoster() {
+        var x = document.getElementById("sifre1");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+
+    function sifregoster1() {
+        var x = document.getElementById("sifreonay");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+
+    function form_kontrol() {
+        if (document.getElementById("ad").value.length == 0)
+            document.getElementById("sonuye").disabled = true;
+        else if (document.getElementById("soyad").value.length == 0)
+            document.getElementById("sonuye").disabled = true;
+        else if (document.getElementById("rizametni").checked == false)
+            document.getElementById("sonuye").disabled = true;
+        else
+            document.getElementById("sonuye").disabled = false;
+
+    }
+</script>
+
+<body>
+    <div class="form2">
+        <form action="js_form_kayit_kontrol.php" onsubmit="return isValid(this)" method="post">
+            <a href="giris-sayfasi.html"><input class="giris1" type="button" value="Giriş Yap"></a>
+            <a href="kayit-ol.html"><input class="uyeol1" type="button" value="Üye Ol"></a>
+
+            <p id="epostayazi">E-posta adresi ile üye ol</p>
+            <hr>
+            <input class="ad" type="text" name="ad" placeholder="Ad" id="ad" onkeyup="form_kontrol()" required
+                minlength="3" maxlength="24">
+            <input class="soyad" type="text" name="soyad" id="soyad" placeholder="Soyad" onkeyup="formkontrol()"
+                required minlength="3" maxlength="24">
+
+            <input class="eposta1" type="text" name="eposta1" id="eposta1" placeholder="E-posta adresi"
+                onkeyup="formkontrol()" required title="Geçerli bir e-mail giriniz." required
+                pattern="(?!test@test\.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}\.[a-z]{2,}(?:\.[a-z]{2,})?"
+                title="Geçerli bir email giriniz">
+
+            <input class="sifre1" type="password" name="sifre1" placeholder="Şifre" id="sifre1" onkeyup="formkontrol()"
+                required pattern="^(?=.*\d)[0-9a-zA-Z]{6,}$"
+                title="Parolanız en az 6 karakter olmalı ve en az 1 rakam içermeli.">
+            <img class="img1" onclick="sifregoster()" src="img/view.png" alt="">
+
+            <input class="sifreonay" type="password" name="sifreonay" id="sifreonay" placeholder="Şifre Onayı"
+                onkeyup="formkontrol()" required pattern="^(?=.*\d)[0-9a-zA-Z]{6,}$"
+                title="Parolanız en az 6 karakter olmalı ve en az 1 rakam içermeli.">
+            <img class="img2" onclick="sifregoster1()" src="img/view.png" alt="">
+
+            <input class="radio" name="rizametni" type="checkbox" id="rizametni" onchange="form_kontrol()">
+            <p class="onay">Önemli kampanyalardan haberdar olmak için <b>Rıza Metni</b> kapsamında elektronik ileti
+                almak istiyorum.</p>
+            <button class="sonuye" type="submit" value="Üye Ol" id="sonuye" disabled>Üye Ol</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
